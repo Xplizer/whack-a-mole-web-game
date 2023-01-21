@@ -1,13 +1,37 @@
-#game-board {
-    width: 300px;
-    height: 300px;
-    position: relative;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+#game-board {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .mole {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     background-color: brown;
-    border-radius: 25px;
+    border-radius: 15px;
+    visibility: hidden;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
 }
-  
+
+#scoreboard {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2em;
+}
+
+#timer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2em;
+}
